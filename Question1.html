@@ -1,0 +1,45 @@
+Find the value of k and m : ( 3 ^3n+2 + 3^3n-1 ) / ( 2*3^nk) = m. n>0 and m is a constant
+
+To find the values of $k$ and $m$, we need to simplify the given expression and ensure that the result $m$ is independent of the variable $n$.
+
+The given equation is:
+$$ \frac{3^{3n+2} + 3^{3n-1}}{2 \cdot 3^{nk}} = m $$
+
+**Step 1: Simplify the numerator.**
+We can factor out the smallest power of 3 from the terms in the numerator, which is $3^{3n-1}$.
+
+$$ 3^{3n+2} + 3^{3n-1} = 3^{3n-1} \cdot 3^3 + 3^{3n-1} \cdot 1 $$
+$$ = 3^{3n-1} (3^3 + 1) $$
+$$ = 3^{3n-1} (27 + 1) $$
+$$ = 28 \cdot 3^{3n-1} $$
+
+**Step 2: Substitute the simplified numerator back into the original equation.**
+$$ \frac{28 \cdot 3^{3n-1}}{2 \cdot 3^{nk}} = m $$
+
+**Step 3: Simplify the fraction.**
+Divide the coefficients ($28/2$) and combine the powers of 3 using the exponent rule $\frac{a^x}{a^y} = a^{x-y}$.
+
+$$ 14 \cdot \frac{3^{3n-1}}{3^{nk}} = m $$
+$$ 14 \cdot 3^{(3n-1) - nk} = m $$
+
+Group the terms containing $n$ in the exponent:
+$$ 14 \cdot 3^{n(3-k) - 1} = m $$
+
+**Step 4: Solve for $k$.**
+The problem states that $m$ is a **constant**. This means the value of $m$ cannot change as $n$ changes. For the expression on the left side to be constant, the exponent of 3 must not depend on $n$.
+
+Therefore, the coefficient of $n$ in the exponent must be zero:
+$$ 3 - k = 0 $$
+$$ k = 3 $$
+
+**Step 5: Solve for $m$.**
+Now that we know $k=3$, substitute this value back into the simplified equation to find $m$.
+
+$$ m = 14 \cdot 3^{n(3-3) - 1} $$
+$$ m = 14 \cdot 3^{0 - 1} $$
+$$ m = 14 \cdot 3^{-1} $$
+$$ m = \frac{14}{3} $$
+
+**Answer:**
+$$ k = 3 $$
+$$ m = \frac{14}{3} $$
